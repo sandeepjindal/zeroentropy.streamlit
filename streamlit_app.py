@@ -32,11 +32,5 @@ st.subheader("Powered by Snowpark for Python and Snowflake Data Marketplace | Ma
 # Print results.
 for row in rows:
     st.write(f"{row[0]} has a :{row[1]}:")
-
-df = pd.DataFrame({'col1': [1,2,3]})
-df  # 👈 Draw the dataframe
-
-x = 10
-'x', x  # 👈 Draw the string 'x' and then the value of x
     
 
