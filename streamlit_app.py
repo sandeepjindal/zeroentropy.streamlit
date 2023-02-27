@@ -17,6 +17,9 @@ def init_connection():
 conn = init_connection()
 
 
+image = Image.open('sunrise.jpeg')
+st.image(image, caption='0 entrpoy')
+
 # Perform query.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
 @st.cache_data(ttl=600)
@@ -51,7 +54,3 @@ st.metric(label="Total carbon emmision cost", value=40000, delta=-0.5,
 
 st.metric(label="Fossil fuel", value=123, delta=123,
     delta_color="off")
-
-image = Image.open('sunrise.jpeg')
-
-st.image(image, caption='Sunrise by the mountains')
