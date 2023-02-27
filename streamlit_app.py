@@ -27,3 +27,6 @@ rows = run_query("SELECT * from carboncredit;")
 # Print results.
 for row in rows:
     st.write(f"{row[0]} has a :{row[1]}:")
+    
+st.header("Knoema: Environment Data Atlas")
+st.subheader("Powered by Snowpark for Python and Snowflake Data Marketplace | Made with Streamlit")
