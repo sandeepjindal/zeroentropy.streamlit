@@ -40,10 +40,8 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=["a", "b", "c"])
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
 
-st.bar_chart(chart_data)
-    
-
+st.map(df)
