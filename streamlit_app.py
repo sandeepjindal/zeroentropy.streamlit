@@ -5,9 +5,6 @@ import snowflake.connector
 import pandas as pd
 import numpy as np
 
-[theme]
-base="dark"
-primaryColor="purple"
 
 # Initialize connection.
 # Uses st.cache_resource to only run once.
@@ -36,5 +33,11 @@ st.subheader("Powered by Snowpark for Python and Snowflake Data Marketplace | Ma
 # Print results.
 for row in rows:
     st.write(f"{row[0]} has a :{row[1]}:")
+    
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=["a", "b", "c"])
+
+st.bar_chart(chart_data)
     
 
