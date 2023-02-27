@@ -3,7 +3,6 @@
 import streamlit as st
 import snowflake.connector
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
 
 # Initialize connection.
@@ -39,11 +38,5 @@ df  # 👈 Draw the dataframe
 
 x = 10
 'x', x  # 👈 Draw the string 'x' and then the value of x
-
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-fig
     
 
