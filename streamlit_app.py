@@ -13,16 +13,6 @@ def init_connection():
 
 conn = init_connection()
 
-st.set_page_config(
-     page_title="Carbon credit distribution",
-     page_icon="🧊",
-     layout="wide",
-     initial_sidebar_state="expanded",
-     menu_items={
-         'Get Help': 'https://developers.snowflake.com',
-         'About': "This is an *extremely* cool app powered by Snowpark for Python, Streamlit, and Snowflake Data Marketplace"
-     }
-)
 
 # Perform query.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
