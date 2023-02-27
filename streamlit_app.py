@@ -5,6 +5,10 @@ import snowflake.connector
 import pandas as pd
 import numpy as np
 
+[theme]
+base="dark"
+primaryColor="purple"
+
 # Initialize connection.
 # Uses st.cache_resource to only run once.
 @st.cache_resource
