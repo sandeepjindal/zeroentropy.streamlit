@@ -24,9 +24,11 @@ def run_query(query):
 
 rows = run_query("SELECT * from carboncredit;")
 
+st.header("Demo in 1 day :joy:")
+st.subheader("Powered by Snowpark for Python and Snowflake Data Marketplace | Made with Streamlit")
+
 # Print results.
 for row in rows:
     st.write(f"{row[0]} has a :{row[1]}:")
     
-st.header("Knoema: Environment Data Atlas")
-st.subheader("Powered by Snowpark for Python and Snowflake Data Marketplace | Made with Streamlit")
+
