@@ -4,7 +4,7 @@ import streamlit as st
 import snowflake.connector
 import pandas as pd
 import numpy as np
-
+from PIL import Image
 
 # Initialize connection.
 # Uses st.cache_resource to only run once.
@@ -45,3 +45,8 @@ df = pd.DataFrame(
     columns=['lat', 'lon'])
 
 st.map(df)
+
+
+image = Image.open('sunrise.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
