@@ -1,1 +1,1 @@
--r https://raw.githubusercontent.com/snowflakedb/snowflake-connector-python/v2.7.9/tested_requirements/requirements_39.reqs
+-r https://gist.github.com/sandeepjindal/81c4ec8faa76bc5fe57582cfd5b60021
