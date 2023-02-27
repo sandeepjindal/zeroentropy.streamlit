@@ -47,6 +47,6 @@ df = pd.DataFrame(
 st.map(df)
 
 
-image = Image.open('sunrise.jpg')
+image = Image.open('sunrise.jpeg')
 
 st.image(image, caption='Sunrise by the mountains')
